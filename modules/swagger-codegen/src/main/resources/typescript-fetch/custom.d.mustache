@@ -1,18 +1,1 @@
 declare module 'portable-fetch';
-declare module 'url' {
-  // Output of `url.parse` needs to be modified due to use of `delete` operator in generated code.
-  interface Url {
-    auth?: string;
-    hash?: string;
-    host?: string;
-    hostname?: string;
-    href?: string;
-    path?: string;
-    pathname?: string;
-    protocol?: string;
-    search?: string;
-    slashes?: boolean;
-    port?: string;
-    query?: string | ParsedUrlQuery;
-  }
-};
